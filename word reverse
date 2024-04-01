@@ -1,0 +1,18 @@
+package simpleint;
+public class wordrev {
+    
+    public static String reverse(String word) {
+        StringBuilder reversedWord = new StringBuilder();
+        for (int i = word.length() - 1; i >= 0; i--) {
+            reversedWord.append(word.charAt(i));
+        }
+        return reversedWord.toString();
+    }
+    
+    public static void main(String[] args) {
+        String originalWord = "hello";
+        String reversedWord = reverse(originalWord);
+        System.out.println("Original word: " + originalWord);
+        System.out.println("Reversed word: " + reversedWord);
+    }
+}
