@@ -1,0 +1,27 @@
+package simpleint;
+import java.util.Scanner;
+public class dectob {
+	    
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        
+	        System.out.println("Enter a decimal number:");
+	        int decimalNumber = scanner.nextInt();
+	        
+	        String binaryNumber = convertToBinary(decimalNumber);
+	        String octalNumber = convertToOctal(decimalNumber);
+	        
+	        System.out.println("Binary equivalent: " + binaryNumber);
+	        System.out.println("Octal equivalent: " + octalNumber);
+	        
+	        scanner.close();
+	    }
+	    
+	    public static String convertToBinary(int decimalNumber) {
+	        return Integer.toBinaryString(decimalNumber);
+	    }
+	    
+	    public static String convertToOctal(int decimalNumber) {
+	        return Integer.toOctalString(decimalNumber);
+	    }
+	}
