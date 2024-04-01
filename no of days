@@ -1,0 +1,24 @@
+package simpleint;
+import java.util.Scanner;
+
+public class nof {
+
+	    
+	    public static void main(String[] args) {
+	        Scanner scanner = new Scanner(System.in);
+	        
+	        System.out.println("Enter the number of days:");
+	        int totalDays = scanner.nextInt();
+	        
+	        int years = totalDays / 365;
+	        int weeks = (totalDays % 365) / 7;
+	        int remainingDays = (totalDays % 365) % 7;
+	        
+	        System.out.println(totalDays + " days is equivalent to:");
+	        System.out.println("Years: " + years);
+	        System.out.println("Weeks: " + weeks);
+	        System.out.println("Days: " + remainingDays);
+	        
+	        scanner.close();
+	    }
+	}
